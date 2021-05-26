@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PARD" targetNamespace="http://tempuri.org/PARD.xsd" xmlns:mstns="http://tempuri.org/PARD.xsd" xmlns="http://tempuri.org/PARD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="KestutisConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="KestutisConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CRM.Properties.Settings.GlobalReference.Default.KestutisConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PARDUOTUVETableAdapter" GeneratorDataComponentClassName="PARDUOTUVETableAdapter" Name="PARDUOTUVE" UserDataComponentName="PARDUOTUVETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="KestutisConnectionString (Settings)" DbObjectName="Kestutis.dbo.PARDUOTUVE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PARD_PAV, PARD_ADRESAS FROM dbo.PARDUOTUVE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PARD_PAV" DataSetColumn="PARD_PAV" />
+              <Mapping SourceColumn="PARD_ADRESAS" DataSetColumn="PARD_ADRESAS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PARD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PARD" msprop:Generator_UserDSName="PARD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PARDUOTUVE" msprop:Generator_TableClassName="PARDUOTUVEDataTable" msprop:Generator_TableVarName="tablePARDUOTUVE" msprop:Generator_TablePropName="PARDUOTUVE" msprop:Generator_RowDeletingName="PARDUOTUVERowDeleting" msprop:Generator_RowChangingName="PARDUOTUVERowChanging" msprop:Generator_RowEvHandlerName="PARDUOTUVERowChangeEventHandler" msprop:Generator_RowDeletedName="PARDUOTUVERowDeleted" msprop:Generator_UserTableName="PARDUOTUVE" msprop:Generator_RowChangedName="PARDUOTUVERowChanged" msprop:Generator_RowEvArgName="PARDUOTUVERowChangeEvent" msprop:Generator_RowClassName="PARDUOTUVERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PARD_PAV" msprop:Generator_ColumnVarNameInTable="columnPARD_PAV" msprop:Generator_ColumnPropNameInRow="PARD_PAV" msprop:Generator_ColumnPropNameInTable="PARD_PAVColumn" msprop:Generator_UserColumnName="PARD_PAV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARD_ADRESAS" msprop:Generator_ColumnVarNameInTable="columnPARD_ADRESAS" msprop:Generator_ColumnPropNameInRow="PARD_ADRESAS" msprop:Generator_ColumnPropNameInTable="PARD_ADRESASColumn" msprop:Generator_UserColumnName="PARD_ADRESAS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

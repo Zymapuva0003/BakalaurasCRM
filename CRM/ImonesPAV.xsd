@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImonesPAV" targetNamespace="http://tempuri.org/ImonesPAV.xsd" xmlns:mstns="http://tempuri.org/ImonesPAV.xsd" xmlns="http://tempuri.org/ImonesPAV.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="KestutisConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="KestutisConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CRM.Properties.Settings.GlobalReference.Default.KestutisConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IMONETableAdapter" GeneratorDataComponentClassName="IMONETableAdapter" Name="IMONE" UserDataComponentName="IMONETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="KestutisConnectionString (Settings)" DbObjectName="Kestutis.dbo.IMONE" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IMONES_PAV FROM dbo.IMONE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IMONES_PAV" DataSetColumn="IMONES_PAV" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImonesPAV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ImonesPAV" msprop:Generator_UserDSName="ImonesPAV">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IMONE" msprop:Generator_TableClassName="IMONEDataTable" msprop:Generator_TableVarName="tableIMONE" msprop:Generator_TablePropName="IMONE" msprop:Generator_RowDeletingName="IMONERowDeleting" msprop:Generator_RowChangingName="IMONERowChanging" msprop:Generator_RowEvHandlerName="IMONERowChangeEventHandler" msprop:Generator_RowDeletedName="IMONERowDeleted" msprop:Generator_UserTableName="IMONE" msprop:Generator_RowChangedName="IMONERowChanged" msprop:Generator_RowEvArgName="IMONERowChangeEvent" msprop:Generator_RowClassName="IMONERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IMONES_PAV" msprop:Generator_ColumnVarNameInTable="columnIMONES_PAV" msprop:Generator_ColumnPropNameInRow="IMONES_PAV" msprop:Generator_ColumnPropNameInTable="IMONES_PAVColumn" msprop:Generator_UserColumnName="IMONES_PAV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

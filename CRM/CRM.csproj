@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BB591B5-9CEB-45D9-AFA0-79AE00C7E3F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CRM</RootNamespace>
+    <AssemblyName>CRM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Zyma\Desktop\Bakalauras\gal dabar\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>353AF9B1EBDEDF198DA0EB09BB5745571D01107E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CRM_4_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>.\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ataskaita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ataskaita.Designer.cs">
+      <DependentUpon>Ataskaita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baigtiuzsakymai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baigtiuzsakymai.Designer.cs">
+      <DependentUpon>baigtiuzsakymai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="darbuotojasUPDATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="darbuotojasUPDATE.Designer.cs">
+      <DependentUpon>darbuotojasUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DATA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMONESFINALLY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IMONESFINALLY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImonesPAV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImonesPAV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="imoneUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="imoneUpdate.Designer.cs">
+      <DependentUpon>imoneUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iranga.cs">
+      <DependentUpon>Iranga.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Iranga1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Iranga.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="irangaupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="irangaupdate.Designer.cs">
+      <DependentUpon>irangaupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KestutisDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KestutisDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="naujaimone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="naujaimone.Designer.cs">
+      <DependentUpon>naujaimone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Naujapard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Naujapard.Designer.cs">
+      <DependentUpon>Naujapard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="naujasdarb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="naujasdarb.Designer.cs">
+      <DependentUpon>naujasdarb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PARD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PARD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Parduotuves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parduotuves.Designer.cs">
+      <DependentUpon>Parduotuves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parduotuveupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parduotuveupdate.Designer.cs">
+      <DependentUpon>parduotuveupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parduotuve_adresas_imone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Parduotuve_adresas_imone.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uzsakymai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uzsakymai.Designer.cs">
+      <DependentUpon>uzsakymai.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ataskaita.resx">
+      <DependentUpon>Ataskaita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baigtiuzsakymai.resx">
+      <DependentUpon>baigtiuzsakymai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="darbuotojasUPDATE.resx">
+      <DependentUpon>darbuotojasUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imoneUpdate.resx">
+      <DependentUpon>imoneUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="irangaupdate.resx">
+      <DependentUpon>irangaupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="naujaimone.resx">
+      <DependentUpon>naujaimone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Naujapard.resx">
+      <DependentUpon>Naujapard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="naujasdarb.resx">
+      <DependentUpon>naujasdarb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parduotuves.resx">
+      <DependentUpon>Parduotuves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parduotuveupdate.resx">
+      <DependentUpon>parduotuveupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="uzsakymai.resx">
+      <DependentUpon>uzsakymai.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CRM_4_TemporaryKey.pfx" />
+    <None Include="CRM_TemporaryKey.pfx" />
+    <None Include="DATA.xsc">
+      <DependentUpon>DATA.xsd</DependentUpon>
+    </None>
+    <None Include="DATA.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DATA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DATA.xss">
+      <DependentUpon>DATA.xsd</DependentUpon>
+    </None>
+    <None Include="IMONESFINALLY.xsc">
+      <DependentUpon>IMONESFINALLY.xsd</DependentUpon>
+    </None>
+    <None Include="IMONESFINALLY.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IMONESFINALLY.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IMONESFINALLY.xss">
+      <DependentUpon>IMONESFINALLY.xsd</DependentUpon>
+    </None>
+    <None Include="ImonesPAV.xsc">
+      <DependentUpon>ImonesPAV.xsd</DependentUpon>
+    </None>
+    <None Include="ImonesPAV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImonesPAV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImonesPAV.xss">
+      <DependentUpon>ImonesPAV.xsd</DependentUpon>
+    </None>
+    <None Include="Iranga.xsc">
+      <DependentUpon>Iranga.xsd</DependentUpon>
+    </None>
+    <None Include="Iranga.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Iranga1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Iranga.xss">
+      <DependentUpon>Iranga.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet.xsc">
+      <DependentUpon>KestutisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet.xss">
+      <DependentUpon>KestutisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet1.xsc">
+      <DependentUpon>KestutisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet1.xss">
+      <DependentUpon>KestutisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet2.xsc">
+      <DependentUpon>KestutisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet2.xss">
+      <DependentUpon>KestutisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet3.xsc">
+      <DependentUpon>KestutisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet3.xss">
+      <DependentUpon>KestutisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet4.xsc">
+      <DependentUpon>KestutisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet4.xss">
+      <DependentUpon>KestutisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet5.xsc">
+      <DependentUpon>KestutisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet5.xss">
+      <DependentUpon>KestutisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet6.xsc">
+      <DependentUpon>KestutisDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet6.xss">
+      <DependentUpon>KestutisDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet7.xsc">
+      <DependentUpon>KestutisDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet7.xss">
+      <DependentUpon>KestutisDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet8.xsc">
+      <DependentUpon>KestutisDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KestutisDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KestutisDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KestutisDataSet8.xss">
+      <DependentUpon>KestutisDataSet8.xsd</DependentUpon>
+    </None>
+    <Content Include="MyDatabase.db3.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="PARD.xsc">
+      <DependentUpon>PARD.xsd</DependentUpon>
+    </None>
+    <None Include="PARD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PARD.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PARD.xss">
+      <DependentUpon>PARD.xsd</DependentUpon>
+    </None>
+    <None Include="Parduotuve_adresas_imone.xsc">
+      <DependentUpon>Parduotuve_adresas_imone.xsd</DependentUpon>
+    </None>
+    <None Include="Parduotuve_adresas_imone.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Parduotuve_adresas_imone.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Parduotuve_adresas_imone.xss">
+      <DependentUpon>Parduotuve_adresas_imone.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
